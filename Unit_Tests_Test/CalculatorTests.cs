@@ -34,6 +34,21 @@ namespace Unit_Tests_Test
 			// Assert
 			Assert.Equal(2, result);
 		}
+
+		[Fact]
+		public void Divide_TwoNumbers_ReturnsSum()
+		{
+			// Arrange
+			var calculator = new Calculator();
+			int num1 = 6;
+			int num2 = 2;
+
+			// Act
+			int result = calculator.Divide(num1, num2);
+
+			//Assert
+			Assert.Equal(3, result);
+		}
 	}
 }
 
